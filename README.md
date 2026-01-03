@@ -17,17 +17,23 @@ We model employee attrition as a time-to-event problem using survival analysis.
 
 **3) Environment Setup**
 Option A: conda
+```bash
 conda create -n ai_hr_survival python=3.11 -y
 conda activate ai_hr_survival
 conda install -c conda-forge numpy pandas matplotlib scikit-learn lifelines scikit-survival xgboost shap -y
+```
 
 Option B: pip
+```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 **4) Reproduce Results (One Command)**
+```bash
 python src/run_pipeline.py --data_path data/hr_data.csv --out_dir results --seed 42
+```
 
 **5) Outputs**
 - Kaplan–Meier plots: results/km_overtime.png, results/km_department.png
@@ -42,6 +48,6 @@ python src/run_pipeline.py --data_path data/hr_data.csv --out_dir results --seed
 - RSF C-index (train/test): ...
 - Notes: AUC(t)/Brier may be unstable under censoring; we rely on C-index as primary.
 
-**7) Notes / Limitations (Optional)**
+**7) Notes / Limitations**
 - IBM dataset is demo/synthetic; may differ from real HR systems.
 - Time-dependent AUC/Brier can be unstable due to censoring at certain horizons.
