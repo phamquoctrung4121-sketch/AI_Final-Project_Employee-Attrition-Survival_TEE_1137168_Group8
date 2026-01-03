@@ -13,16 +13,24 @@ Methodology:
 - Survival Analysis: Framing the problem as a "time-to-event" task.
  
 -- event = 1 if Attrition == "Yes".
+
 -- duration = YearsAtCompany × 12 (months).
+
 -- Employees who haven't left are considered "right-censored".
+
 
 - Core Models:
 
 -- Kaplan-Meier: Exploratory analysis and survival comparison across groups (e.g., department, overtime status).
+
 -- Cox Proportional Hazards (CoxPH): A linear, highly interpretable model used as a baseline.
+
 -- Random Survival Forest (RSF): An ensemble model to capture non-linear effects and complex interactions.
+
 -- XGBoost Classifier: A powerful classification model used in parallel for comparison.
+
 -- Explainable AI (XAI): Using SHAP (SHapley Additive exPlanations) to explain feature importance at both global and individual levels.
+
 
 **📁 Repository Structure**
 
@@ -100,10 +108,15 @@ After running the pipeline, the following results will be generated in the resul
 - Models & Evaluation:
 
 -- cox_summary.csv: Summary table of coefficients and statistical significance from the CoxPH model.
+
 -- employee_risk_table_3_6_12m.csv: Predicted risk stratification table for each employee at 3, 6, and 12-month horizons.
+
 -- xgb_logloss_overfitting.png: Train/test logloss tracking plot for overfitting detection.
+
 -- shap_summary.png: SHAP summary plot ranking feature impacts on attrition risk.
+
 -- metrics.json: JSON file summarizing key performance metrics (C-index).
+
 
 **📊 Key Results Summary**
 
