@@ -36,7 +36,7 @@ Methodology:
 
 ├── data/                   # Folder for input data (CSV)
 
-├── src/                    # Main source code
+├── sourcecode/             # Main source code
 
 │   └── run_pipeline.py     # Script to run the entire pipeline
 
