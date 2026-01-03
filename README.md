@@ -1,5 +1,6 @@
 **AI_Final-Project_Employee-Attrition-Survival_TEE_1137168_Group8**
-This project builds a Python pipeline for employee attrition prediction using survival analysis. We implement KM curves, a Cox PH model, and a Random Survival Forest to capture non-linear effects. An XGBoost classifier is used alongside SHAP for interpretability, outputting individual attrition probabilities to support data-driven HR decisions.
+
+This project develops a reproducible Python pipeline to predict employee attrition (IBM HR Analytics), focusing on estimating time-to-attrition and identifying key drivers. The dual approach combines Survival Analysis and Machine Learning to balance interpretability and accuracy. Specifically, we use Kaplan-Meier for data exploration, the Cox Proportional Hazards model as an interpretable baseline, and Random Survival Forest to capture non-linear effects. In parallel, an XGBoost classifier is trained and SHAP is applied to explain feature importance at both the global and individual levels. The outputs include not only risk probabilities for 3/6/12-month horizons but also survival curves, logloss curves for overfitting monitoring, and SHAP visualizations, providing a clear, data-driven foundation for HR decision-making.
 
 **1) Project Description**
 We model employee attrition as a time-to-event problem using survival analysis.
