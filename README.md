@@ -46,8 +46,8 @@ python src/run_pipeline.py --data_path data/hr_data.csv --out_dir results --seed
 - Metrics summary: results/metrics.json
 
 **6) Results Summary (fill from results/metrics.json)**
-- Cox C-index (train/test): ...
-- RSF C-index (train/test): ...
+- Cox C-index (train/test): 0.983/0.974
+- RSF C-index (train/test): 0.714/0.704
 - Notes: AUC(t)/Brier may be unstable under censoring; we rely on C-index as primary.
 
 **7) Notes / Limitations**
