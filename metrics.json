@@ -1,0 +1,29 @@
+{
+  "data_rows": 1470,
+  "data_cols": 37,
+  "attrition_yes": 237,
+  "attrition_no": 1233,
+  "cox_c_index_train": 0.9531602008053501,
+  "cox_c_index_test": 0.9448031660070818,
+  "rsf_c_index_train": 0.9783495645078317,
+  "rsf_c_index_test": 0.9222557800458238,
+  "rsf_auc_brier_optional": {
+    "times": [
+      12,
+      24,
+      36
+    ],
+    "auc_t": null,
+    "mean_auc": null,
+    "ibs": null,
+    "error": "censoring survival function is zero at one or more time points"
+  },
+  "outputs": {
+    "km_overtime": "km_overtime.png",
+    "km_department": "km_department.png",
+    "cox_summary": "cox_summary.csv",
+    "risk_table": "employee_risk_table_3_6_12m.csv",
+    "xgb_logloss": "xgb_logloss_overfitting.png",
+    "shap_summary": "shap_summary.png"
+  }
+}
