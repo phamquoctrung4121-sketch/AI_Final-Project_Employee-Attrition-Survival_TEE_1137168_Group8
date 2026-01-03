@@ -16,6 +16,7 @@ We model employee attrition as a time-to-event problem using survival analysis.
 - assets/: slides / project materials
 
 **3) Environment Setup**
+
 Option A: conda
 ```bash
 conda create -n ai_hr_survival python=3.11 -y
