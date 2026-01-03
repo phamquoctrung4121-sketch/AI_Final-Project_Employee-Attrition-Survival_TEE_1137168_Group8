@@ -17,19 +17,16 @@ We model employee attrition as a time-to-event problem using survival analysis.
 
 **3) Environment Setup**
 Option A: conda
-```bash
 conda create -n ai_hr_survival python=3.11 -y
 conda activate ai_hr_survival
 conda install -c conda-forge numpy pandas matplotlib scikit-learn lifelines scikit-survival xgboost shap -y
 
 Option B: pip
-```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
 **4) Reproduce Results (One Command)**
-```bash
 python src/run_pipeline.py --data_path data/hr_data.csv --out_dir results --seed 42
 
 **5) Outputs**
